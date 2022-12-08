@@ -19,7 +19,7 @@ public class DemoApplication {
 	}
 
 	@RequestMapping("/long")
-	String sayHello() {
+	String sayHello2() {
 		return "It is a long part of URL request";
 	}
 }
