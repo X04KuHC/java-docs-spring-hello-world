@@ -17,4 +17,9 @@ public class DemoApplication {
 	String sayHello() {
 		return "Hello Azure! What the heck did you forgot here?";
 	}
+
+	@RequestMapping("/long")
+	String sayHello() {
+		return "It is a long part of URL request";
+	}
 }
