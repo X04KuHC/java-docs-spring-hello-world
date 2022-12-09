@@ -20,14 +20,17 @@ public class DemoApplication {
 
 	@RequestMapping("/{name}}")
 	String sayHello2(@PathVariable("name") String name) {
+		String result = "";
 		switch (name) {
 			case "Oleg":
-			return "Hello, Oleg! Nice to see you here!";
+			result = "Hello, Oleg! Nice to see you here!";
+			break
 			case "Yaroslav":
-			return "Hello, Master!";
+			result = "Hello, Master!";
+			break
 			default:
-			return "I do not recognise this name";
+			result = "I do not recognise this name";
 		}
-		return "Default return in this function";
+		return result;
 	}
 }
