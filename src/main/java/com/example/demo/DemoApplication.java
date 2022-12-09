@@ -22,11 +22,11 @@ public class DemoApplication {
 	String sayHello2(@PathVariable("name") String name) {
 		switch (name) {
 			case "Oleg":
-			return "Hello, Oleg! Nice to see you here!"
+			return "Hello, Oleg! Nice to see you here!";
 			case "Yaroslav":
-			return "Hello, Master!"
+			return "Hello, Master!";
 			default:
-			return "I do not recognise this name"
+			return "I do not recognise this name";
 		}
 		return "Default return in this function";
 	}
