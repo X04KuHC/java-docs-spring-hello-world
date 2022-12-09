@@ -18,8 +18,16 @@ public class DemoApplication {
 		return "Hello Azure! App with slash-long";
 	}
 
-	@RequestMapping("/long")
-	String sayHello2() {
-		return "It is a long part of URL request";
+	@RequestMapping("/{name}}")
+	String sayHello2(@PathVariable("name") String name) {
+		switch (name) {
+			case "Oleg":
+			return "Hello, Oleg! Nice to see you here!"
+			case "Yaroslav":
+			return "Hello, Master!"
+			default:
+			return "I do not recognise this name"
+		}
+		return "Default return in this function";
 	}
 }
