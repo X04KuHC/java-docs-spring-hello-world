@@ -24,10 +24,10 @@ public class DemoApplication {
 		switch (name) {
 			case "Oleg":
 			result = "Hello, Oleg! Nice to see you here!";
-			break
+			break;
 			case "Yaroslav":
 			result = "Hello, Master!";
-			break
+			break;
 			default:
 			result = "I do not recognise this name";
 		}
