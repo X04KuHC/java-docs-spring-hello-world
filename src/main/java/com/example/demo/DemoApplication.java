@@ -18,7 +18,7 @@ public class DemoApplication {
 
 	@RequestMapping("/")
 	String sayHello() {
-		return "Hello Azure! App with slash-long";
+		return "Hello Azure! \nApp with slash-long";
 	}
 
 	@RequestMapping("/{name}")
